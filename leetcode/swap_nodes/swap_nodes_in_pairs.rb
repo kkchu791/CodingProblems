@@ -1,3 +1,11 @@
+# class ListNode
+#     attr_accessor :val, :next
+#     def initialize(val)
+#         @val = val
+#         @next = nil
+#     end
+# end
+
 def swap_pairs(head)
     if head.nil? || head.next.nil?
       return head
