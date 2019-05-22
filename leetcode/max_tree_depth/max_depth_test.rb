@@ -28,6 +28,11 @@ class MaxDepthTest < Minitest::Test
     tree5.right = tree6
   end
 
+  def test_adding_node_to_bst
+    new_tree_with_added_node =
+    assert_equal new_tree_with_added_node, add_node(7)
+  end
+
   def test_max_depth_method_for_tree
     assert_equal 4, max_depth(@root)
   end
