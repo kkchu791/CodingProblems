@@ -21,5 +21,6 @@ def index_equals_value_search(arr)
   -1
 end
 
+#O(log n)
 
 index_equals_value_search([-8,0,2,5]) == 2
