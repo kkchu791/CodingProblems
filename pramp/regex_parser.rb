@@ -3,9 +3,7 @@ def is_match(text, pattern)
   pattern_index = 0
   wild_card_skipper = nil
 
-  while text_index <= text.length - 1
-    p text_index, "text index"
-    p pattern_index, "pattern index"
+  while text_index <= text.length - 1 && pattern_index <= pattern.length
     chars_do_not_match = text[text_index] != pattern[pattern_index]
     next_char_is_wild_card = pattern[pattern_index + 1] == '*'
     curr_char_is_wild_card = pattern[pattern_index] == '*'
@@ -40,7 +38,8 @@ def is_match(text, pattern)
 
   true
 end
-text = "acdsss"
-pattern = "ab*c*."
+
+text = "aa"
+pattern = "..."
 
 p is_match(text, pattern) == true
