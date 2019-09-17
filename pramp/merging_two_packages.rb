@@ -7,6 +7,5 @@ def get_indices_of_item_weights(arr, limit)
         hash[limit - el] = index
       end
   end
-
   []
 end
